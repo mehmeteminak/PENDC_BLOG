@@ -1,12 +1,14 @@
+
+
 $(document).ready(function() {
-    $(".testimonial-carousel").slick({
+    $(".slider-container").slick({
         infinite: !0,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: !1,
         arrows:true,
-        prevArrow: $(".carousel-container .prev"),
-        nextArrow: $(".carousel-container .next"),
+        prevArrow : $(".prev"),
+        nextArrow : $(".next"),
         responsive: [{
             breakpoint: 1200,
             settings: {
@@ -52,3 +54,4 @@ window.addEventListener('scroll', function() {
         
     }
   });
+

@@ -580,66 +580,59 @@ html {
     font-weight: bold;
 }
 
-.testimonial-carousel {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.slider-container {
+    height: auto;
+    width: 100%;
+    flex: 4;
+    
 }
+
+
+
+
 .slidable-box {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    height: 5vh;
+    height: auto;
     
+    justify-content: space-between;
+   
 }
-.slidable-box img{
-    width: 100%; 
-    height : 30vh;
-    width: 40vh;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.slidable-box a:nth-child(1)>img{
+    width: 90%;
+    border-radius: 5%;
 }
 
-.slidable-box p{
-    margin-top: 20px;
-    font-size: 16px;
+.slidable-box div>a:nth-child(1){
+    color: #f27405;
+    font-size: 11px;
+}
+
+.slidable-box div>a:nth-child(2){
     color: black;
 }
+.slidable-box div>a:hover{
+    text-decoration: none;
+}
 
-.slidable-box a:nth-child(2){
-    color: #f27405;
-}
-.slidable-box a {
-    text-decoration: none !important;
-}
 
 
 .prev {
+    
     position: absolute;
-    left: 0px;
-    height: 300px !important;
-    margin-right: 90px;
-
-
+    left: 30px;
+    
+    
 }
 .next {
+    
     position: absolute;
-    right: 0px;
-    margin-left: 30px !important;
+    right: 40px;
 }
 
-.testimonial-carousel-controls button{
-    width: 90%;
-    background-color: white;
-    font-weight: bold;
-    color: #808080;
-    height: 5vh;
-    border-color : #E9ECEF;
-}
-.testimonial-carousel-controls img{
-    width: 20px;
 
-}
+
+
 
 
 
@@ -883,7 +876,40 @@ html {
 
 
 .one-cikanlar {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 150vh;
-    background-color: #363D4B;
+    height: 130vh;
+    background-color: black;
+}
+
+.one-cikanlar-heading p:nth-child(1){
+    padding-left: 10%;
+    padding-top: 5%;
+    color: white;
+    font-size: 18px;
+}
+
+.one-cikanlar-heading p:nth-child(1) span{
+    color: #f27405;
+    font-size: 11px;
+    font-weight: bold;
+    
+}
+
+.bs-slider-box {
+    height: 130vh !important;
+    background-size: contain;
+    background-size: 120vh !important;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.6),rgba(40, 40, 40, 0.6)),url("https://pendc.com/assets/imgs/gallery/large/GaleriFoto-1.jpg");
+}
+.carousel-item  {
+    height: 110vh !important;
+}
+
+#carouselExampleIndicators  {
+    margin-top: 100px;
+    width: 80%;
+    align-self: center;
+    height: 130vh;
 }
