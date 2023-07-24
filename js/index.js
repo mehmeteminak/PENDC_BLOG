@@ -53,5 +53,24 @@ window.addEventListener('scroll', function() {
         targetDiv.style.display = 'flex';
         
     }
+
+    /* For the banner */
+
+    var banner = document.querySelector(".banner");
+    var recommendDiv = document.querySelector(".recomment-blogs");
+    
+    if (this.window.innerWidth > 1020) {
+        if (window.scrollY >= 4470) { 
+            banner.classList.add("fixed-banner");
+            recommendDiv.classList.add("hidden");
+            
+            
+        }else {
+            banner.classList.remove("fixed-banner");
+            recommendDiv.classList.remove("hidden");
+        }
+    }
+    
+    
   });
 
