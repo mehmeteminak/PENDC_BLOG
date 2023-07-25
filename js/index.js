@@ -60,7 +60,9 @@ window.addEventListener('scroll', function() {
     var recommendDiv = document.querySelector(".recomment-blogs");
     
     if (this.window.innerWidth > 1020) {
-        if (window.scrollY >= 4470) { 
+        
+        if (window.scrollY >= 4300) { 
+            console.log("Çalışmaması lazım");
             banner.classList.add("fixed-banner");
             recommendDiv.classList.add("hidden");
             
@@ -69,6 +71,8 @@ window.addEventListener('scroll', function() {
             banner.classList.remove("fixed-banner");
             recommendDiv.classList.remove("hidden");
         }
+    }else {
+        banner.classList.remove("fixed-banner");
     }
     
     
