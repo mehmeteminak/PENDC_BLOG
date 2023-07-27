@@ -61,15 +61,14 @@ window.addEventListener('scroll', function() {
     
     if (this.window.innerWidth > 1020) {
         
-        if (window.scrollY >= 4300) { 
-            console.log("Çalışmaması lazım");
+        if (window.scrollY >= 4200) { 
             banner.classList.add("fixed-banner");
-            recommendDiv.classList.add("hidden");
             
             
-        }else {
+        }else if (window.scrollY < 4200){
             banner.classList.remove("fixed-banner");
-            recommendDiv.classList.remove("hidden");
+        } else {
+            banner.classList.remove("fixed-banner");
         }
     }else {
         banner.classList.remove("fixed-banner");

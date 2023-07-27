@@ -320,6 +320,10 @@ html {
     .most-popular-blog-content {
         width: 90%;
     }
+
+    .blog-page-content {
+        width: 95%;
+    }
 }
 .most-popular-blog-content a:nth-child(1) > span {
     font-size: 13px;
@@ -398,7 +402,7 @@ html {
 .most-reads-container {
     display: flex;
     flex-direction : column;
-    
+    margin-bottom: 20px !important;
     justify-content : space-between;
     
 }
@@ -431,7 +435,7 @@ html {
     }
 
     .most-reads-heading {
-        margin-top: 70px;
+        margin-top: 50px;
     }
    
 
@@ -573,7 +577,7 @@ html {
 }
 
 .choosen-blogs-title { 
-    margin-top : -40px;
+    margin-top : 50px;
     margin-bottom: 40px;
 }
 
@@ -638,15 +642,25 @@ html {
 .slick-control .prev,
 .slick-control .next {
     cursor: pointer;
-    box-shadow:  0 0 10px 5px  rgb(240, 240, 240);
+    box-shadow:  0 0 2px 5px  rgb(240, 240, 240);
     border-radius: 50px;
     align-items: center;
 }
 
 /* Optionally, you can add some styling to the arrow images */
 .slick-control img {
+    padding: 2px;
+    object-fit: contain;
     width: 30px; /* Adjust the width as needed */
     height: 30px; /* Adjust the height as needed */
+}
+
+.slick-control .prev { 
+    margin-right: 30px;
+}
+
+.slick-control .next { 
+    margin-left: 5px;
 }
 
 
@@ -672,6 +686,7 @@ html {
 }
 
 .trend-heading span { 
+
     color: #808080;
     font-size: 11px;
     font-weight: bold;
@@ -769,7 +784,7 @@ html {
 
 @media (max-width: 1100px) {
     .choosen-blogs-title {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 }
 
@@ -941,8 +956,10 @@ html {
     background-image: linear-gradient(rgba(40, 40, 40, 0.6),rgba(40, 40, 40, 0.6)),url("https://pendc.com/assets/imgs/gallery/large/GaleriFoto-1.jpg");
 }
 .carousel-item  {
-    height: 110vh !important;
+    height: 110vh;
 }
+
+
 
 #carouselExampleIndicators  {
     margin-top: 100px;
@@ -964,29 +981,29 @@ html {
     display: flex;
     flex-wrap: wrap;
     
-    height: 180vh;
+    height: auto;
     width: 100%;
 }
 .recomment-blogs-container {
     flex:3;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
+    justify-content: flex-start;
+    height: auto;
 
 }
 .recomment-blogs {
     display: flex;
     flex-direction: column;
-    
     width: 100%;
-    height: 90vh;
-    margin-bottom: 100vh !important;
+    height: auto;
+
 }
 
 @media (max-width : 1020px) {
     .recomment-blogs-container {
         flex-basis: 100%;
+        margin-top: 10vh;
     }
     .latest-blogs {
         flex-basis: 100%;
@@ -1122,26 +1139,82 @@ html {
 
 .banner {
     display: flex;
-    position: absolute;
     justify-content: center;
     height: 100vh;
-    margin-top: 50px;
-    width : 300px;
+    width : 100%;
+    margin-top: 70px;
+
 }
 .banner img {
-    margin-top: -70px;
-    width: 100%;
+    
+    width: 300px;
 }
 
 .fixed-banner {
+    justify-content: flex-end !important;
+    right: 188px;
     position: fixed;
-    width : 300px;
-    top: 200px;
-    background-color: white;
+    left : 10;
+    top : 140px;
+    bottom: 10px;
     
-
 }
 
 .hidden {
     display: none;
 }
+
+#carouselExampleIndicators {
+    width: 80%;
+    height: 80%;
+    
+}
+
+.carousel-inner {
+    height: 90%;
+    
+    
+}
+
+
+
+@media (max-width : 768px) {
+    #carouselExampleIndicators {
+        width: 95%;
+        height: 80%;
+    }
+
+    .one-cikanlar-heading {
+        margin-left: -35px;
+    }
+}
+
+.most-popular-blog-in-carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    flex: 4;
+    border-radius: 1%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(40,40,40,0.6), rgba(40,40,40,0.6)), url("https://pendc.com/assets/imgs/gallery/large/GaleriFoto-1.jpg");
+}
+
+.most-popular-blog-content-in-carousel {
+    margin-left: 30px;
+    max-height: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.deneme {
+    height: 100vh !important;
+    width: 100%;
+    background-color: #363D4B;
+}
+
+
