@@ -32,6 +32,9 @@ function toggleMenu() {
     
     var sideMenu = document.getElementById("sideMenu");
     sideMenu.classList.toggle("opened");
+
+    var sideMenuTransparent = document.getElementById("sideMenuTransparent");
+    sideMenuTransparent.classList.toggle("opened");
 }
 
 window.addEventListener('scroll', function() {
@@ -58,21 +61,9 @@ window.addEventListener('scroll', function() {
 
     var banner = document.querySelector(".banner");
     var recommendDiv = document.querySelector(".recomment-blogs");
+    const footer = document.getElementById('footer');
     
-    if (this.window.innerWidth > 1020) {
-        
-        if (window.scrollY >= 4200) { 
-            banner.classList.add("fixed-banner");
-            
-            
-        }else if (window.scrollY < 4200){
-            banner.classList.remove("fixed-banner");
-        } else {
-            banner.classList.remove("fixed-banner");
-        }
-    }else {
-        banner.classList.remove("fixed-banner");
-    }
+   
     
     
   });
